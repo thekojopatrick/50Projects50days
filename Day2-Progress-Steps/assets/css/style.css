@@ -100,14 +100,14 @@ body {
   _transition: all .4s ease-out;
 }
 
-.btn:active{
+.btn:active {
   transform: scale(.98);
 }
 
-.btn:focus{
+.btn:focus {
   outline: none;
 }
 
-.btn:disabled{
+.btn:disabled {
   background-color: var(--line-border-empty);
 }
