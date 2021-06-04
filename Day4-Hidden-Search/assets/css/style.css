@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container {
+  position: relative;
+  height: 5rem;
+}
+
+.search-container .search-input {
+  background-color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  _position: relative;
+  height: 5rem;
+  width: 5rem;
+  transition: width .3s ease;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 2.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5rem;
+  width: 5rem;
+  transition: transform .3s ease;
+}
+
+.btn:focus, .search-input:focus {
+  outline: none;
+}
+
+.search-container.active .search-input {
+  width: 20rem;
+}
+
+.search-container.active .btn {
+  transform: translateX(19.8rem);
+}
