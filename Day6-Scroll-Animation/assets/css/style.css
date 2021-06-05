@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100vw;
+  _height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  _height: 90vh;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 3.2rem;
+}
+
+.content {
+  width: 40rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  text-align: center;
+  background-color: #420b8a;
+  color: #fff;
+  _padding: 5rem 0;
+  margin: 1.6rem 0;
+  transform: translateX(300%);
+  transition: all .4s ease;
+}
+
+.content:nth-of-type(even) {
+  opacity: 0;
+  transform: translateY(30%);
+  _transform: translateX(-300%);
+}
+
+.content.show {
+  opacity: 1;
+  transform: translate(0);
+}
