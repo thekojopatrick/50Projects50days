@@ -1,0 +1,80 @@
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  _margin: 0 auto;
+}
+
+.video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.c-video {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.c-video:hover .controls {
+  transform: translate(0);
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background: #9D04FF;
+  backface-visibility: hidden;
+  border-radius: 0px 0px 8px 8px;
+  transform: translateY(100%) translateY(-5px);
+  transition: all .2s ease;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttons button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttons i {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
+}
+
+.progress-bar {
+  height: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #CD80FF;
+  border-radius: 2px;
+}
+
+.progress {
+  width: 5%;
+  height: 10px;
+  background-color: #fff;
+}
