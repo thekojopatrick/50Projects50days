@@ -28,6 +28,7 @@ video.addEventListener('timeupdate', function () {
   let width = progressPos * 100
   progress.style.width = `${width}%`
   if (video.ended) {
+    fas.className = 'fas fa-play'
     console.log('ended');
   }
 })
