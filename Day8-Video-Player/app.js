@@ -1,9 +1,10 @@
 var video = document.querySelector('.video')
 var progress = document.querySelector('.progress')
+var loading = document.querySelector('.progress-loading')
 var fas = document.querySelector('.fas')
 var playBtn = document.getElementById('play-pause')
 var volume = document.getElementById('volume')
-var buttons = document.querySelector('.buttons')
+var buttons = document.querySelector('.controls')
 
 function togglePlayPause() {
   if (video.paused) {
@@ -32,3 +33,11 @@ video.addEventListener('timeupdate', function () {
     console.log('ended');
   }
 })
+
+video.addEventListener('loadeddata', (event) => {
+  var progressPos = video.loadeddata;
+  let width = progressPos * 100
+  loading.style.width = `${width}%`
+  console.log('Yay! The readyState just increased to  ' +
+    'HAVE_CURRENT_DATA or greater for the first time.');
+});

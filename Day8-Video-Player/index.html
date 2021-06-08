@@ -24,15 +24,18 @@
               stroke="white" stroke-linecap="round" />
           </svg>
         </button>
-        <div class="controls">
-          <div class="buttons">
+        <div class="controls-wrapper">
+          <div class="controls">
             <button class="play-pause" id="play-pause"><i class="fas fa-play"></i></button>
             <div class="progress-bar">
+              <div class="progress-loading"></div>
               <div class="progress"></div>
             </div>
             <div class='c-volume'>
               <button class="volume" id="volume"><i class="fas fa-volume-up"></i></button>
-              <input class="volume-slider" id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+              <div class="slider-container">
+                <input class="volume-slider" id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+              </div>
             </div>
           </div>
         </div>
