@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Video Player</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="c-video">
+				<video class="video" src="cowboy.mp4"></video>
+				<button class="player-close-btn" id="player-close">
+					<svg
+						width="14"
+						height="14"
+						viewBox="0 0 14 14"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M9.82843 4.17157L7 6.99999M4.17157 9.82842L7 6.99999M7 6.99999L9.82843 9.82842M7 6.99999L4.17157 4.17157"
+							stroke="white"
+							stroke-linecap="round"
+						/>
+					</svg>
+				</button>
+				<div class="controls-wrapper">
+					<div class="controls">
+						<button class="play-pause" id="play-pause">
+							<i class="fas fa-play"></i>
+						</button>
+						<div class="progress-bar">
+							<div class="progress-loading"></div>
+							<div class="progress"></div>
+						</div>
+						<div class="c-volume">
+							<button class="volume" id="volume">
+								<i class="fas fa-volume-up"></i>
+							</button>
+							<div class="slider-container">
+								<input
+									class="volume-slider"
+									id="volumeslider"
+									type="range"
+									min="0"
+									max="100"
+									value="0"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
