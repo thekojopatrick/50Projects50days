@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #686de0;
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 32px;
+	letter-spacing: -0.5px;
+	color: #0f2137;
+}
+
+.container {
+	background-color: #fff;
+	padding: 2rem 1.5rem;
+	border-radius: 10px;
+	text-align: center;
+	max-width: 100%;
+	width: 40vw;
+	_box-shadow: 0px 25px 100px rgba(69, 88, 157, 0.08);
+	box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.joke {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 50px;
+	color: #000;
+	margin: 50px auto;
+	max-width: 40vw;
+}
+
+.btn {
+	background-color: #9f68e0;
+	color: #fff;
+	font-family: inherit;
+	border-radius: 10px;
+	font-size: 1rem;
+	cursor: pointer;
+	padding: 1rem 4rem;
+	border: none;
+	box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.btn:focus {
+	outline: 0;
+}
